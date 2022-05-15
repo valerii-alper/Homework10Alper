@@ -4,59 +4,49 @@
 	box-sizing: border-box;
 }
 
+body {
+	font-family: Arial;
+}
+
 .top {
-	background: #e8ebf1;
+	height: 120px;
+	filter: drop-shadow(0px 2px 2.5px rgba(0,0,0,0.07));
+	background-color: #e8ebf1;
+	border: 1px solid rgba(0,0,0,0.15);
+	position: relative;
+	z-index: 2;
+}
+
+#container {
+	width: 1000px;
+	height: 120px;
+	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 56px 243px 55px 295px;
-}
-
-.navigation {
-	text-transform: uppercase;
-}
-
-ul {
-  list-style: none;
-}
-
-.nav {
-  display: flex;
-  justify-content: center;
-}
-
-.nav-items {
-  display: flex;
-  align-items: center;
-  height: 50px;
 }
 
 .nav-item {
-  position: relative;
-  margin-right: 40px;
-}
-
-.nav-items {
+	display: inline-flex;
+	margin-right: 15px;
 	position: relative;
 }
 
-.nav-item:hover .nav-items-dropdown{
-  display: block;
-  background: white;
-  z-index: 1;
-}
+.nav-item-link:hover{
+  background: #fff;
+  border-top: 5px solid #2aacc8; 
+  color: #4db8d0;
+  padding-right: 20px;
+} 
 
 .nav-item-link {
-  padding: 16px;
-  color: #000;
-  text-decoration: none;
-  display: block;
-  text-transform: uppercase;
-  position: relative;
-}
-
-.nav-item:hover{
-  background: #fff;
+	font-size: 13px;
+	line-height: 20px;
+	color: #000;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 13px;
 }
 
 .nav-items-dropdown {
@@ -65,7 +55,15 @@ ul {
   left: 0;
   text-align: center;
   display: none;
-  width: 200px;
+  width: 199px;
+  padding-top: 15px;
+  filter: drop-shadow(0px 5px 0px #2aacc8);
+}
+
+.nav-item:hover .nav-items-dropdown{
+  display: block;
+  background: #fff;
+  z-index: 0;
 }
 
 .nav-item-dropdown {
@@ -73,20 +71,18 @@ ul {
 	font-size: 13px;
 	color: #000;
 	line-height: 36px;
+	border-bottom: 1px solid #e7e7e7;
+	border-width: 1px 100px;
+}
+
+.nav-item-dropdown:hover {
+	color: #2aacc8;
 }
 
 .nav-dropdown {
 	text-align: left;
 	padding-left: 16px;
-}
-
-
-.nav-item-link:hover {
-	color: #2aacc8;	
-}
-
-.nav-item-dropdown:hover {
-	color: #2aacc8;	
+	list-style: none;
 }
 
 .container {
@@ -98,6 +94,7 @@ ul {
 	background-position: center center, center right;
 	margin: 0 auto;
 }
+
 .heading {
 	width: 369px;
 	height: 242px;
@@ -109,14 +106,16 @@ ul {
 	padding-top: 124px;
 }
 
-.background-logo {
+.background-banner {
 	background: #81e3ed;
+	z-index: 0;
 }
 
 .carousel {
-	width: 1000px;
+	width: 1050px;
 	margin: 0 auto;
-	z-index: 0;
+	padding: 29px;
+	z-index: 1;
 }
 
 .slick-dots li button::before {
@@ -127,49 +126,76 @@ ul {
 	margin-left: -32px	
 }
 
-.paragraph {
-	margin-top: 37px;
-	margin-bottom: 30px;
-	font-size: 13px;
-	line-height: 20px;
-	width: 220px;
+.services {
+	filter: drop-shadow(0px -2px 2.5px rgba(0,0,0,0.07));
+	background-color: #e8ebf1;
+	border: 1px solid rgba(0,0,0,0.15);
 }
 
-.menu {
-	width: 100%;
+.services-items {
+	width: 1000px;
+	height: 300px;
+	margin: 0 auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: #e8ebf1;
-	padding: 71px 278px 51px 333px;
 }
 
-.heading-menu {
-	text-transform: uppercase;
-	font-size: 15px;
-	text-align: end;
+.service-item {
+	margin-right: 44px;
 }
 
-.heading-menu1 {
-	text-transform: uppercase;
+.service-heading {
 	font-size: 15px;
-	text-align: center;
-}
-.link {
-	text-decoration: none;
-	color: #81e4ed;
+	line-height: 20px;
+	color: #000;
 	font-weight: bold;
+	text-transform: uppercase;
+	text-align: right;
+	position: relative;
+}
+
+.cleantheme-heading {
+	font-size: 15px;
+	line-height: 20px;
+	color: #000;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	position: relative;
+}
+
+
+.service-paragraph {
+	width: 217px;
+	font-size: 13px;
+	line-height: 20px;
+	color: #363636;
+	margin-top: 40px;
+	margin-bottom: 30px;
+}
+
+.link {
+	width: 220px;
+	font-size: 13px;
+	line-height: 20px;
+	color: #363636;
+	text-decoration: none;
+}
+
+.link:hover {
+	color: #4db8d0;
 }
 
 .download {
 	width: 1000px;
-	height: 140px;
 	background-color: #e8fcfe;
 	border: 1px solid #81e4ed;
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
 	padding: 38px 27px;
+	align-items: center;
 }
 
 .download-psd {
@@ -177,7 +203,7 @@ ul {
 	padding-bottom: 43px;
 }
 
-.down {
+.download-paragraph {
 	width: 613px;
 	height: 69px;
 	font-size: 16px;
@@ -194,76 +220,73 @@ ul {
 	padding: 23px 19px 23px 70px;
 	text-transform: uppercase;
 	font-weight: bold;
+	position: relative;
+	font-size: 17px;
 }
 
-.copyright {
-	width: 614px;
-	font-size: 13px;	
-	line-height: 18px;
+.footer-copyright {
+	width: 1000px;
+	height: 93px;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	align-items: center;
 
+}
+.copyright {
+	width: 650px;
+	font-size: 13px;
+	line-height: 18px;
+	color: #363636;
 }
 
 .copy {
-	width: 100%;
 	height: 93px;
 	background-color: #e8ebf1;
 	border: 1px solid rgba(0,0,0,0.15);
-	display: flex;
-	justify-content: space-between;
-    padding: 31px 291px 0px 289px;
 }
 
-.x, .xy {
-	width: 246px;
-	margin-right: 44px;
-}
-
-.icon-clean-theme {
-	border-radius: 25px;
-	font-size: 27px;
-	background-color: #2aacc8;
-	padding: 8px;
-	position: absolute;
-	top: 70px;
-	left: 288px;
-}
-
-.menu {
-	position: relative;
+.icon-down {
+  	font-size: 10px;
+    position: absolute;
+   	top: 19px;
+    left: 85px;
 }
 
 .icon-responsive-design {
 	border-radius: 25px;
-	font-size: 27px;
+	font-size: 23px;
 	background-color: #2aacc8;
 	padding: 8px;
 	position: absolute;
+	top: 36px;
 }
-.icon-down {
-  	font-size: 10px;
-    position: absolute;
-    top: 19px;
-    left: 96px;
-}
-
-.xy {
-	position: relative;
+	
+.icon-ready-for-coding {
+	border-radius: 25px;
+	font-size: 23px;
+	background-color: #2aacc8;
+	padding: 8px;
+	position: absolute;
+	top: 36px;
 }
 
 .icon-fully-layerd-psd {
 	border-radius: 25px;
-	font-size: 27px;
+	font-size: 23px;
 	background-color: #2aacc8;
 	padding: 8px;
 	position: absolute;
+	top: 36px;
 }
 
-.icon-ready-for-coding {
+.icon-clean-theme {
 	border-radius: 25px;
-	font-size: 27px;
+	font-size: 23px;
 	background-color: #2aacc8;
 	padding: 8px;
 	position: absolute;
+	top: 36px;
 }
 
 .icon-download-psd {
@@ -271,21 +294,9 @@ ul {
 	font-size: 35px;
 	padding: 8px;
 	position: absolute;
-	top: 1020px;
-    left: 1052px;
- }
-
-.icon-right {
-  
+	left: 16px;
+    top: 2px;
 }
-
-
-
-
-
-
-
-
 
 
 

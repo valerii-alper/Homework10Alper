@@ -10,32 +10,34 @@
     </head>
     <body>
         <header class="top">
-            <div class="image-logo">
-                <img src="img/logo.png" alt="logo" />
+            <div id="container">
+                <div class="image-logo">
+                    <img src="img/logo.png" alt="logo" />
+                </div>
+                <nav class="nav">
+                    <ul class="nav-items">
+                        <li class="nav-item"><a href="#" class="nav-item-link">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-item-link">About Us</a></li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-item-link">Services</a>
+                            <span class="icon-down"></span>
+                            <ul class="nav-items-dropdown">
+                                <li class="nav-dropdown"><a href="#" class="nav-item-dropdown">Web Design</a></li>
+                                <li class="nav-dropdown"><a href="#" class="nav-item-dropdown">Wordpress Design</a></li>
+                                <li class="nav-dropdown"><a href="#" class="nav-item-dropdown">Mobile App Development</a></li>
+                                <li class="nav-dropdown"><a href="#" class="nav-item-dropdown">Internet Marketing</a></li>
+                                <li class="nav-dropdown"><a href="#" class="nav-item-dropdown">Social Media Management</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="#" class="nav-item-link">Portfolio</a></li>
+                        <li class="nav-item"><a href="#" class="nav-item-link">Blog</a></li>
+                        <li class="nav-item"><a href="#" class="nav-item-link">Contact Us</a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav class="nav">
-                <ul class="nav-items">
-                    <li class="nav-item"><a href="#" class="nav-item-link">Home</a></li>
-                    <li class="nav-item"><a href="#" class="nav-item-link">About Us</a></li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-item-link">Services</a>
-                        <span class="icon-down"></span>
-                        <ul class="nav-items-dropdown">
-                            <li class="nav-dropdown"><a href="#" class="nav-item-dropdown">Web Design</a></li>
-                            <li class="nav-dropdown"><a href="#" class="nav-item-dropdown">Wordpress Design</a></li>
-                            <li class="nav-dropdown"><a href="#" class="nav-item-dropdown">Mobile App Development</a></li>
-                            <li class="nav-dropdown"><a href="#" class="nav-item-dropdown">Internet Marketing</a></li>
-                            <li class="nav-dropdown"><a href="#" class="nav-item-dropdown">Social Media Management</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a href="#" class="nav-item-link">Portfolio</a></li>
-                    <li class="nav-item"><a href="#" class="nav-item-link">Blog</a></li>
-                    <li class="nav-item"><a href="#" class="nav-item-link">Contact Us</a></li>
-                </ul>
-            </nav>
         </header>
         <main>
-            <div class="background-logo">
+            <div class="background-banner">
                 <div class="carousel">
                     <div class="container">
                         <p class="heading">We design clean, crisp & memorable icons</p>
@@ -49,64 +51,70 @@
                 </div>
             </div>
 
-            <div class="menu">
-                <div class="x">
-                    <span class="icon-clean-theme"></span>
-                    <h1 class="heading-menu1">clean theme</h1>
-                    <p class="paragraph">Ut nec lorem id orci convallis porta. Donec pharetra neque eu velit dictum molestie. Duis porta gravida augue sed viverra. Quisque at nulla leo, non aliquet mi.</p>
-                    <span class="icon-right"></span>
-                    <a href="#" class="link">Read More</a>
-                </div>
-                <div class="xy">
-                    <span class="icon-responsive-design"></span>
-                    <h1 class="heading-menu">responsive design</h1>
-                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod placerat dui et tincidunt. Sed sollicitudin posuere auctor. Phasellus at ultricies nisl. Integer at leo eros.</p>
-                    <span class="icon-right"></span>
-                    <a href="#" class="link">Read More</a>
-                </div>
-                <div class="x">
-                    <span class="icon-fully-layerd-psd"></span>
-                    <h1 class="heading-menu">fully layerd psd</h1>
-                    <p class="paragraph">Phasellus lobortis metus non augue sodales volutpat. Vestibulum sit amet nibh eros, hendrerit venenatis est. In vitae nulla nec purus cursus pretium sed id magna.</p>
-                    <span class="icon-right"></span>
-                    <a href="#" class="link">Read More</a>
-                </div>
-                <div class="x">
-                    <span class="icon-ready-for-coding"></span>
-                    <h1 class="heading-menu">ready for coding</h1>
-                    <p class="paragraph">Vivamus convallis feugiat mauris sed posuere. Nam rutrum, quam quis euismod commodo, elit est porta quam, non placerat eros neque porta ante. Fusce quis odio urna.</p>
-                    <span class="icon-right"></span>
-                    <a href="#" class="link">Read More</a>
+            <div class="services">
+                <div class="services-items">
+                    <div class="service-item">
+                        <span class="icon-clean-theme"></span>
+                        <h2 class="cleantheme-heading">clean theme</h2>
+                        <p class="service-paragraph">Ut nec lorem id orci convallis porta. Donec pharetra neque eu velit dictum molestie. Duis porta gravida augue sed viverra. Quisque at nulla leo, non aliquet mi.</p>
+                        <span class="icon-right"></span>
+                        <a href="#" class="link">Read More</a>
+                    </div>
+
+                    <div class="service-item">
+                        <h2 class="service-heading">responsive design</h2>
+                        <span class="icon-responsive-design"></span>
+                        <p class="service-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod placerat dui et tincidunt. Sed sollicitudin posuere auctor. Phasellus at ultricies nisl. Integer at leo eros.</p>
+                        <span class="icon-right"></span>
+                        <a href="#" class="link">Read More</a>
+                    </div>
+
+                    <div class="service-item">
+                        <span class="icon-fully-layerd-psd"></span>
+                        <h2 class="service-heading">fully layerd psd</h2>
+                        <p class="service-paragraph">Phasellus lobortis metus non augue sodales volutpat. Vestibulum sit amet nibh eros, hendrerit venenatis est. In vitae nulla nec purus cursus pretium sed id magna.</p>
+                        <span class="icon-right"></span>
+                        <a href="#" class="link">Read More</a>
+                    </div>
+
+                    <div class="service-item">
+                        <span class="icon-ready-for-coding"></span>
+                        <h2 class="service-heading">ready for coding</h2>
+                        <p class="service-paragraph">Vivamus convallis feugiat mauris sed posuere. Nam rutrum, quam quis euismod commodo, elit est porta quam, non placerat eros neque porta ante. Fusce quis odio urna.</p>
+                        <span class="icon-right"></span>
+                        <a href="#" class="link">Read More</a>
+                    </div>
                 </div>
             </div>
 
             <div class="download-psd">
                 <div class="download">
-                    <div>
-                        <p class="down">
-                            This is a clean and modern, four column website PSD template. You can code it into a Wordpress website, HTML5 responsive website for your personal or client works. So ahead and download this wonderful PSD
-                            template!
-                        </p>
-                    </div>
-                    <div>
-                        <span class="psd">download psd</span>
+                    <p class="download-paragraph">
+                        This is a clean and modern, four column website PSD template. You can code it into a Wordpress website, HTML5 responsive website for your personal or client works. So ahead and download this wonderful PSD template!
+                    </p>
+                    <button class="psd">
+                        download psd
                         <span class="icon-download-psd"></span>
-                    </div>
+                    </button>
                 </div>
             </div>
         </main>
         <footer class="copy">
-            <p class="copyright">© Copyright 2012 - BisLite Inc. All rights reserved. Some free icons used here are created by Brankic1979.com. Client Logos are copyright and trademark of the respective owners / companies.</p>
-            <div class="image-logo">
-                <img src="img/logo.png" alt="logo" />
+            <div class="footer-copyright">
+                <p class="copyright">© Copyright 2012 - BisLite Inc. All rights reserved. Some free icons used here are created by Brankic1979.com. Client Logos are copyright and trademark of the respective owners / companies.</p>
+                <div class="image-logo">
+                    <img src="img/logo.png" alt="logo" />
+                </div>
             </div>
         </footer>
+
         <script src="js/jquery-3.6.0.js"></script>
         <script src="js/slick.min.js"></script>
         <script>
             $(document).ready(function () {
                 $(".carousel").slick({
                     dots: true,
+                    arrows: false,
                 });
             });
         </script>
